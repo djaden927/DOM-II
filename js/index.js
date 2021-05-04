@@ -53,7 +53,7 @@ window.addEventListener('load', (event) => {
 
 // click and double click
   document.addEventListener('click', function(event){
-      event.target.style.opacity = 0.5;
+      event.target.style.opacity = 0.9;
   })
 
   document.body.addEventListener('dblclick', (e) =>{
@@ -83,3 +83,8 @@ function zoom(event) {
   let scale = 1;
   const el = document.querySelector('img');
   el.onwheel = zoom;
+
+  window.addEventListener('copy', function(event){
+
+    event.target.style.color = "blue";
+  });
